@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: linear-gradient(from 0% 50% to 100% 50%, #C9F6FF, #65DDEF)linear-gradient(from 25% 25% to 100% 100%, #dc143c, #32cd32);" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.gamejavafx.Controller">
+   <children>
+      <GridPane layoutX="137.0" layoutY="146.0" prefHeight="300.0" prefWidth="300.0">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button fx:id="button1" mnemonicParsing="false" onAction="#clickButton" prefHeight="104.0" prefWidth="106.0" styleClass="buttonColor" />
+            <Button fx:id="button2" mnemonicParsing="false" onAction="#clickButton" prefHeight="104.0" prefWidth="106.0" styleClass="buttonColor" GridPane.columnIndex="1" />
+            <Button fx:id="button3" mnemonicParsing="false" onAction="#clickButton" prefHeight="104.0" prefWidth="106.0" styleClass="buttonColor" GridPane.columnIndex="2" />
+            <Button fx:id="button4" mnemonicParsing="false" onAction="#clickButton" prefHeight="104.0" prefWidth="106.0" styleClass="buttonColor" GridPane.rowIndex="1" />
+            <Button fx:id="button5" mnemonicParsing="false" onAction="#clickButton" prefHeight="104.0" prefWidth="106.0" styleClass="buttonColor" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Button fx:id="button6" mnemonicParsing="false" onAction="#clickButton" prefHeight="104.0" prefWidth="106.0" styleClass="buttonColor" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <Button fx:id="button7" mnemonicParsing="false" onAction="#clickButton" prefHeight="104.0" prefWidth="106.0" styleClass="buttonColor" GridPane.rowIndex="2" />
+            <Button fx:id="button8" mnemonicParsing="false" onAction="#clickButton" prefHeight="104.0" prefWidth="106.0" styleClass="buttonColor" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Button fx:id="button9" mnemonicParsing="false" onAction="#clickButton" prefHeight="104.0" prefWidth="106.0" styleClass="buttonColor" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+         </children>
+      </GridPane>
+      <Button layoutX="602.0" layoutY="40.0" mnemonicParsing="false" onAction="#start1" prefHeight="62.0" prefWidth="120.0" text="START" />
+      <Button fx:id="button99" disable="true" layoutX="572.0" layoutY="483.0" mnemonicParsing="false" prefHeight="65.0" prefWidth="171.0" text="Go to next level" />
+      <Button layoutX="598.0" layoutY="407.0" mnemonicParsing="false" onAction="#check1" prefHeight="62.0" prefWidth="120.0" text="CHECK" />
+      <Label alignment="CENTER" layoutX="291.0" layoutY="24.0" prefHeight="94.0" prefWidth="217.0" text="Level 1" textFill="WHITE">
+         <font>
+            <Font name="Candara Bold Italic" size="66.0" />
+         </font>
+      </Label>
+   </children>
+    <stylesheets>
+        <URL value="@styles.css" />
+    </stylesheets>
+</AnchorPane>
