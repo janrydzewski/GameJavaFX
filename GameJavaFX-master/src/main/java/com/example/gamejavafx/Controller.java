@@ -1,6 +1,6 @@
 package com.example.gamejavafx;
 
-import javafx.animation.PauseTransition;
+import javafx.animation.*;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -77,6 +77,13 @@ public class Controller {
         scene = new Scene(root);
         stage.setScene(scene);
         stage.show();
+
+        root.translateXProperty().set(scene.getHeight());
+        Timeline timeline = new Timeline();
+        KeyValue kv = new KeyValue(root.translateXProperty(),0, Interpolator.EASE_IN);
+        KeyFrame kf = new KeyFrame(Duration.millis(500), kv);
+        timeline.getKeyFrames().add(kf);
+        timeline.play();
 
 
     }
@@ -159,6 +166,13 @@ public class Controller {
             stage.setScene(scene);
             stage.show();
 
+            root.translateXProperty().set(scene.getHeight());
+            Timeline timeline = new Timeline();
+            KeyValue kv = new KeyValue(root.translateXProperty(),0, Interpolator.EASE_IN);
+            KeyFrame kf = new KeyFrame(Duration.millis(500), kv);
+            timeline.getKeyFrames().add(kf);
+            timeline.play();
+
         }
         else{
             for(int i=0; i < result.size(); i++){
@@ -184,6 +198,7 @@ public class Controller {
                 stage.setScene(scene);
 
                 stage.show();
+
             });
             pause.play();
 
@@ -248,6 +263,13 @@ public class Controller {
             scene = new Scene(root);
             stage.setScene(scene);
             stage.show();
+
+            root.translateXProperty().set(scene.getHeight());
+            Timeline timeline = new Timeline();
+            KeyValue kv = new KeyValue(root.translateXProperty(),0, Interpolator.EASE_IN);
+            KeyFrame kf = new KeyFrame(Duration.millis(500), kv);
+            timeline.getKeyFrames().add(kf);
+            timeline.play();
 
         }
         else{

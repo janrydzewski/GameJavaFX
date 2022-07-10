@@ -43,7 +43,7 @@
             <Button fx:id="button16" mnemonicParsing="false" onAction="#clickButton" prefHeight="104.0" prefWidth="106.0" styleClass="buttonColor" GridPane.columnIndex="3" GridPane.rowIndex="3" />
          </children>
       </GridPane>
-      <Button layoutX="602.0" layoutY="40.0" mnemonicParsing="false" onAction="#start2" prefHeight="62.0" prefWidth="120.0" text="START" />
+      <Button layoutX="602.0" layoutY="40.0" mnemonicParsing="false" onAction="#start3" prefHeight="62.0" prefWidth="120.0" text="START" />
       <Button fx:id="button99" disable="true" layoutX="572.0" layoutY="483.0" mnemonicParsing="false" prefHeight="65.0" prefWidth="171.0" text="Go to next level" />
       <Button layoutX="598.0" layoutY="407.0" mnemonicParsing="false" onAction="#check3" prefHeight="62.0" prefWidth="120.0" text="CHECK" />
       <Label alignment="CENTER" layoutX="291.0" layoutY="24.0" prefHeight="94.0" prefWidth="217.0" text="Level 3" textFill="WHITE">
